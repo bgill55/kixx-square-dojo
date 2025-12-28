@@ -4,7 +4,7 @@
 
 A gamified training simulator for the **Kixx Square** construction tool. This retro-futurist web app challenges carpenters to master complex layouts, rafter math, and stair gauges under the watchful eye of a sarcastic 8-bit donkey mascot.
 
-![Kixx Square Dojo](/screens/landing.png)
+![Kixx Square Dojo](public/screens/landing.png)
 
 ## 🚀 Features (V3 "Goldilocks" Release)
 
