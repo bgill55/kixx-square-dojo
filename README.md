@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# 🥋 Kixx Square Dojo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **"Master the Square. Silence the Donkey."**
 
-Currently, two official plugins are available:
+A gamified training simulator for the **Kixx Square** construction tool. This retro-futurist web app challenges carpenters to master complex layouts, rafter math, and stair gauges under the watchful eye of a sarcastic 8-bit donkey mascot.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Kixx Square Dojo](/screens/landing.png)
 
-## React Compiler
+## 🚀 Features (V3 "Goldilocks" Release)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **10 Interactive Levels**: From basic Wall Layouts to the "Impossible" Hip Rafter final exam.
+*   **Terminal Green Aesthetic**: A high-contrast, eye-friendly retro theme (with secret "Party Mode" easter egg).
+*   **Audio Synthesis**: Custom-built sound engine for clicks, hovers, and 8-bit fanfare.
+*   **Tension Timer**: 30-second countdown per level to simulate jobsite pressure.
+*   **The Red Donkey**: An interactive mascot that reacts to your score with praise or roasting.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+*   **Frontend**: React + TypeScript
+*   **Build Tool**: Vite
+*   **Styling**: Tailwind CSS + Custom "Goldilocks" CSS overrides
+*   **Audio**: Web Audio API (No external assets)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎮 How to Play
+1.  **Clone the repo**:
+    ```bash
+    git clone https://github.com/bgill55/kixx-square-dojo.git
+    cd kixx-square-dojo
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Start the simulator**:
+    ```bash
+    npm run dev
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏗️ Deployment
+Ready for **Vercel** or **Netlify**.
+Build for production with:
+```bash
+npm run build
 ```
+Dist files will be in `dist/`.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Powered by Kixx Logic • © 2025*
